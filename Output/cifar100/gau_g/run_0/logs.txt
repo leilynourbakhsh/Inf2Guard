@@ -1,0 +1,47 @@
+{
+  "dataset": "cifar100",
+  "epoch": 100,
+  "batch_size": 128,
+  "attack_layer": 1,
+  "attack_type": "denoiser",
+  "atk_model_knowledge": "none",
+  "noise_knowledge": "exact",
+  "noise_type": "gau",
+  "noise_a": -1,
+  "noise_b": 1,
+  "alpha": 1.5,
+  "beta": 0.005,
+  "lam": 0.9,
+  "tol": 0.15,
+  "noise_scale": 1.0,
+  "data_aug": true,
+  "save_images": false,
+  "pretrain": true,
+  "MI": "MI",
+  "phoni_num": 1,
+  "phoni_size": 100,
+  "phoni_epoch": 1000,
+  "atk_itr": 3,
+  "atk_lr": 0.05,
+  "lr": 0.01,
+  "noise_structure": [
+    1000,
+    32,
+    32,
+    32
+  ],
+  "num_class": 10,
+  "device": "cuda:0",
+  "num_attacked": 25,
+  "attack_epoch": 2000,
+  "image_names": "gau_g",
+  "multi_target": "true",
+  "atk_sample": 1,
+  "num_classes": 100
+}
+Total runs : 1
+The mean MSE is : 102.97
+The mean SSIM is : 0.47
+The mean PSNR is : 14.02
+The mean attack feature loss is : 0.85
+The test acc is : 47.0
