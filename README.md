@@ -8,7 +8,7 @@ preprint: https://arxiv.org/pdf/2403.02116.pdf
 
 
 * Build from source code
-* 
+  ```bash
   git clone https://github.com/leilynourbakhsh/Inf2Guard
   cd GCert
   pip install -r requirements.txt
