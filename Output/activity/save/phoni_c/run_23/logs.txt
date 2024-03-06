@@ -1,0 +1,43 @@
+{
+  "dataset": "activity",
+  "epoch": 20,
+  "batch_size": 128,
+  "burn_in": 1,
+  "attack_layer": 1,
+  "attack_type": "denoiser",
+  "attacker_knowledge": "none",
+  "atk_model_knowledge": "pattern",
+  "noise_knowledge": "pattern",
+  "noise_type": "phoni",
+  "alpha": 1.5,
+  "beta": 0.005,
+  "lam": 0.001,
+  "tol": 0.15,
+  "noise_scale": 0.5,
+  "data_scale": 1.25,
+  "data_aug": false,
+  "save_images": false,
+  "phoni_num": 3,
+  "phoni_size": 100,
+  "phoni_epoch": 400,
+  "atk_itr": 5,
+  "atk_lr": 0.5,
+  "lr": 0.03,
+  "noise_structure": [
+    1000,
+    32
+  ],
+  "num_class": 6,
+  "device": "cuda:0",
+  "num_attacked": 25,
+  "attack_epoch": 1000,
+  "image_names": "phoni_c",
+  "multi_target": "true",
+  "atk_sample": 1
+}
+Total runs : 1
+The mean MSE is : 2.92
+The mean SSIM is : 0.0
+The mean PSNR is : 0.0
+The mean attack feature loss is : 3.08
+The test acc is : 72.0

@@ -1,0 +1,44 @@
+{
+  "dataset": "mnist",
+  "epoch": 10,
+  "batch_size": 128,
+  "attack_layer": 1,
+  "attack_type": "denoiser",
+  "atk_model_knowledge": "none",
+  "noise_knowledge": "exact",
+  "noise_type": "lap",
+  "noise_a": 0.0,
+  "noise_b": 1.0,
+  "alpha": 1.5,
+  "beta": 0.005,
+  "lam": 0.003,
+  "tol": 0.15,
+  "noise_scale": 1.8,
+  "data_aug": false,
+  "save_images": false,
+  "phoni_num": 3,
+  "phoni_size": 100,
+  "phoni_epoch": 1000,
+  "atk_itr": 5,
+  "atk_lr": 0.05,
+  "lr": 0.03,
+  "noise_structure": [
+    1000,
+    8,
+    28,
+    28
+  ],
+  "num_class": 10,
+  "device": "cuda:0",
+  "num_attacked": 25,
+  "attack_epoch": 1000,
+  "image_names": "lap_g",
+  "multi_target": "true",
+  "atk_sample": 1
+}
+Total runs : 1
+The mean MSE is : 93.18
+The mean SSIM is : 0.01
+The mean PSNR is : 11.17
+The mean attack feature loss is : 0.98
+The test acc is : 48.0
